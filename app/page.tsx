@@ -219,9 +219,9 @@ export default function Home() {
             <h3 className="font-medium">Shortest Path - SkyTrain Service</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>
-                Applied and compared Dijkstra&#39;s and A∗A∗ algorithms to generate
-                the shortest path for each pair of SkyTrain stops in Greater
-                Vancouver.
+                Applied and compared Dijkstra&#39;s and A<sup>∗</sup> algorithms
+                to generate the shortest path for each pair of SkyTrain stops in
+                Greater Vancouver.
               </li>
               <li>
                 Compared the fare change of transitioning from zone-based to
@@ -234,8 +234,8 @@ export default function Home() {
             <h3 className="font-medium">Automatic Speech Recognition</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>
-                Fine-tuned OpenAI’s Whisper model to improve recognition accuracy
-                for aphasic speech.
+                Fine-tuned OpenAI’s Whisper model to improve recognition
+                accuracy for aphasic speech.
               </li>
               <li>
                 Implemented in Python and Shell, using PyTorch and the Hugging
