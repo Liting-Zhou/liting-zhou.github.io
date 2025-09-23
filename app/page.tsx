@@ -201,12 +201,41 @@ export default function Home() {
             </ul>
           </article>
 
+          <article className="card p-5 transition-shadow hover:shadow-md">
+            <h3 className="font-medium">Virtual Memory Manager Simulator</h3>
+            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
+              <li>
+                Designed a VMM simulator incorporating interactions among page
+                table, TLB, OS, MMU, memory, and permanent storage.
+              </li>
+              <li>
+                Implemented in C++ with a focus on a two-level page table,
+                two-level TLB and supporting variable page sizes.
+              </li>
+            </ul>
+          </article>
+
+          <article className="card p-5 transition-shadow hover:shadow-md">
+            <h3 className="font-medium">Shortest Path - SkyTrain Service</h3>
+            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
+              <li>
+                Applied and compared Dijkstra&#39;s and A∗A∗ algorithms to generate
+                the shortest path for each pair of SkyTrain stops in Greater
+                Vancouver.
+              </li>
+              <li>
+                Compared the fare change of transitioning from zone-based to
+                distance-based pricing systems.
+              </li>
+            </ul>
+          </article>
+
           <article className="card p-5 transition-shadow hover:shadow-md sm:col-span-2">
             <h3 className="font-medium">Automatic Speech Recognition</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>
-                Fine-tuned OpenAI’s Whisper model to improve recognition
-                accuracy for aphasic speech.
+                Fine-tuned OpenAI’s Whisper model to improve recognition accuracy
+                for aphasic speech.
               </li>
               <li>
                 Implemented in Python and Shell, using PyTorch and the Hugging
