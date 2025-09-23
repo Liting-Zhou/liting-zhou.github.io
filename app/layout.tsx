@@ -44,7 +44,7 @@ export default function RootLayout({
       className={`${inter.variable} ${sourceSerif.variable} scroll-smooth`}
     >
       <body className="antialiased">
-        <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/50 bg-white/70 border-b border-black/5">
+        <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/85 bg-white/90 border-b border-black/5">
           <div className="max-w-4xl mx-auto w-full px-6 py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-xl font-semibold hidden md:block">
