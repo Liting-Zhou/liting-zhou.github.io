@@ -346,6 +346,11 @@ section[id] {
 
 /* Mobile navigation adjustments */
 @media (max-width: 768px) {
+  /* Increase scroll margin for mobile to account for taller nav */
+  section[id] {
+    scroll-margin-top: 120px;
+  }
+  
   header .flex {
     gap: 0.75rem;
   }
