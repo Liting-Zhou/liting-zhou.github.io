@@ -60,6 +60,7 @@ a:hover {
 /* Project links with enhanced styling */
 a[href*="github.com"],
 a[href*="youtube.com"],
+a[href*="youtu.be"],
 a[href*="drive.google.com"],
 a[href*="linkedin.com"] {
   background: linear-gradient(135deg, 
@@ -75,6 +76,7 @@ a[href*="linkedin.com"] {
 
 a[href*="github.com"]:hover,
 a[href*="youtube.com"]:hover,
+a[href*="youtu.be"]:hover,
 a[href*="drive.google.com"]:hover,
 a[href*="linkedin.com"]:hover {
   background: linear-gradient(135deg, 

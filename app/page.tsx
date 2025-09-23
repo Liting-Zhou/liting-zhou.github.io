@@ -460,9 +460,13 @@ export default function Home() {
           <span className="chip">C++</span>
           <span className="chip">HTML</span>
           <span className="chip">CSS</span>
-          <span className="chip">React</span>
+          <span className="chip">React.js</span>
+          <span className="chip">Next.js</span>
           <span className="chip">Node.js</span>
+          <span className="chip">Express.js</span>
           <span className="chip">RESTful APIs</span>
+          <span className="chip">AWS</span>
+          <span className="chip">Docker</span>
         </div>
       </section>
     </div>
