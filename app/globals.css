@@ -87,6 +87,27 @@ a[href*="linkedin.com"]:hover {
   box-shadow: 0 4px 12px color-mix(in oklab, var(--vibrant-blue) 20%, #0000 80%);
 }
 
+/* Special styling for navigation bar social icons */
+nav a[href*="github.com"],
+nav a[href*="linkedin.com"] {
+  background: none !important;
+  border: none !important;
+  padding: 0.25rem !important;
+  margin: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+nav a[href*="github.com"]:hover,
+nav a[href*="linkedin.com"]:hover {
+  background: color-mix(in oklab, var(--primary) 15%, #fff 85%) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 /* Colored list markers for lists using Tailwind's list-disc */
 ul.list-disc li::marker {
   color: color-mix(in oklab, var(--muted) 70%, var(--foreground) 30%);
