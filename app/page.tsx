@@ -4,7 +4,7 @@ export default function Home() {
       {/* Intro */}
       <section className="mb-10">
         <h1
-          className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pb-2"
         >
           Liting Zhou
         </h1>

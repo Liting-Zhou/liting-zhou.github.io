@@ -49,7 +49,7 @@ export default function RootLayout({
             <Link href="/" className="text-xl font-semibold">
               Liting Zhou
             </Link>
-            <nav className="flex gap-4 text-sm">
+            <nav className="flex gap-4 text-sm items-center">
               <a href="#experience" className="hover:underline">
                 Experience
               </a>
