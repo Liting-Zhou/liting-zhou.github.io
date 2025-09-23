@@ -162,7 +162,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
               >
-                View project demo
+                Watch demos
                 <svg
                   className="w-3.5 h-3.5 ml-1"
                   aria-hidden="true"
@@ -198,6 +198,31 @@ export default function Home() {
                 <li>Supported both text-based and GUI-based gameplay.</li>
               </ul>
             </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://github.com/Liting-Zhou/the-world"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View source
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
@@ -221,6 +246,31 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://www.youtube.com/watch?v=trrZVCQ0F30"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Watch demo
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
@@ -237,6 +287,31 @@ export default function Home() {
                   Utilized Firebase for database connectivity and management.
                 </li>
               </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://www.youtube.com/watch?v=mCqeC1i0Vqs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Watch demo
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
             </div>
           </article>
 
@@ -255,6 +330,31 @@ export default function Home() {
                   two-level TLB and supporting variable page sizes.
                 </li>
               </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://github.com/Liting-Zhou/VMM_simulator"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View source
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
             </div>
           </article>
 
@@ -275,6 +375,31 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://youtu.be/BStUwHF0PtQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Watch demo
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md sm:col-span-2">
@@ -291,6 +416,31 @@ export default function Home() {
                 Face Transformers library.
               </li>
             </ul>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://github.com/Liting-Zhou/Aphasic_speech_recognition"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View source
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
           </article>
         </div>
       </section>
