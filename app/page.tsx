@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   return (
     <div className="py-8 sm:py-12">
       {/* Intro */}
@@ -328,6 +334,7 @@ export default function Home() {
             </div>
           </article>
 
+          {/* Always visible */}
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <h3 className="font-medium text-lg mb-4">
@@ -414,92 +421,107 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">
-                Virtual Memory Manager Simulator
-              </h3>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
-                <li>
-                  Designed a VMM simulator incorporating interactions among page
-                  table, TLB, OS, MMU, memory, and permanent storage.
-                </li>
-                <li>
-                  Implemented in C++ with a focus on a two-level page table,
-                  two-level TLB and supporting variable page sizes.
-                </li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://github.com/Liting-Zhou/VMM_simulator"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                View source
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
+          {/* Collapsible projects*/}
+          {!showAllProjects ? null : (
+            <>
+              <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+                <div className="flex-1">
+                  <h3 className="font-medium text-lg mb-4">
+                    Virtual Memory Manager Simulator
+                  </h3>
+                  <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                    <li>
+                      Designed a VMM simulator incorporating interactions among
+                      page table, TLB, OS, MMU, memory, and permanent storage.
+                    </li>
+                    <li>
+                      Implemented in C++ with a focus on a two-level page table,
+                      two-level TLB and supporting variable page sizes.
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-auto pt-4 border-t border-gray-100">
+                  <a
+                    href="https://github.com/Liting-Zhou/VMM_simulator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+                  >
+                    View source
+                    <svg
+                      className="w-3.5 h-3.5 ml-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">
-                Shortest Path - SkyTrain Service
-              </h3>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
-                <li>
-                  Applied and compared Dijkstra&#39;s and A<sup>∗</sup>{" "}
-                  algorithms to generate the shortest path for each pair of
-                  SkyTrain stops in Greater Vancouver.
-                </li>
-                <li>
-                  Compared the fare change of transitioning from zone-based to
-                  distance-based pricing systems.
-                </li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://youtu.be/BStUwHF0PtQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                Watch demo
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
+              <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+                <div className="flex-1">
+                  <h3 className="font-medium text-lg mb-4">
+                    Shortest Path - SkyTrain Service
+                  </h3>
+                  <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                    <li>
+                      Applied and compared Dijkstra&#39;s and A<sup>∗</sup>{" "}
+                      algorithms to generate the shortest path for each pair of
+                      SkyTrain stops in Greater Vancouver.
+                    </li>
+                    <li>
+                      Compared the fare change of transitioning from zone-based
+                      to distance-based pricing systems.
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-auto pt-4 border-t border-gray-100">
+                  <a
+                    href="https://youtu.be/BStUwHF0PtQ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+                  >
+                    Watch demo
+                    <svg
+                      className="w-3.5 h-3.5 ml-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </>
+          )}
+        </div>
+        {/* Toggle button */}
+        <div className="mt-6 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setShowAllProjects((v) => !v)}
+            className="inline-flex items-center px-4 py-2 rounded-md border border-gray-200 bg-gradient-to-r from-blue-100 to-indigo-50 text-sm font-medium text-gray-800 shadow-sm hover:from-purple-100 hover:to-pink-50 hover:border-amber-300 transition"
+          >
+            {showAllProjects ? "Show fewer projects" : "Show more projects"}
+          </button>
         </div>
       </section>
 
