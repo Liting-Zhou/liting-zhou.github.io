@@ -3,7 +3,7 @@ export default function Home() {
     <div className="py-8 sm:py-12">
       {/* Intro */}
       <section className="mb-10">
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pb-2">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight pb-2">
           Liting Zhou
         </h1>
         <p className="mt-2 text-sm text-gray-600">
@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Experience */}
       <section id="experience" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+        <h2 className="text-2xl font-semibold heading-accent">
           Professional Experience
         </h2>
         <div className="mt-6 space-y-6">
@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* Education */}
       <section id="education" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
+        <h2 className="text-2xl font-semibold heading-accent">
           Education
         </h2>
         <div className="mt-6 space-y-4">
@@ -124,9 +124,7 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-          Projects
-        </h2>
+        <h2 className="text-2xl font-semibold heading-accent mb-6">Projects</h2>
         <div className="grid sm:grid-cols-2 gap-6">
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
@@ -509,7 +507,7 @@ export default function Home() {
 
       {/* Skills */}
       <section id="skills" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-teal-600 to-green-600 bg-clip-text text-transparent">
+        <h2 className="text-2xl font-semibold heading-accent">
           Technical Skills
         </h2>
         <div className="mt-4 flex flex-wrap gap-2">
