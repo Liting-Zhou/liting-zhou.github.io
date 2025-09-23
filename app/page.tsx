@@ -9,7 +9,7 @@ export default function Home() {
           Liting Zhou
         </h1>
         <p className="mt-2 text-sm text-gray-600">
-          Vancouver, BC ·{" "}
+          Vancouver, BC, Canada ·{" "}
           <a href="mailto:lt.zhou1119@gmail.com" className="underline">
             lt.zhou1119@gmail.com
           </a>{" "}
@@ -152,7 +152,7 @@ export default function Home() {
                 </li>
                 <li>
                   Constructed data pipelines for analytics visualization and
-                  implemented LLM-powered suggestion features.
+                  implemented LLM-powered AI agent suggestion features.
                 </li>
                 <li>
                   Automated deployment processes using GitHub Actions and AWS
@@ -185,6 +185,55 @@ export default function Home() {
                 </svg>
               </a>
             </div>
+          </article>
+
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="font-medium text-lg">
+                  Maternal & Baby Second-hand Market with AI Parenting
+                </h3>
+                <span className="text-xs bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full font-semibold shadow-md">
+                  Featured
+                </span>
+              </div>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
+                <li>
+                  The platform integrates second-hand trading and parenting Q&A to help parents efficiently and safely trade baby products while providing personalized parenting advice.
+                </li>
+                <li>
+                  Uses image recognition to automatically generate product titles and descriptions, improving user posting efficiency.
+                </li>
+                <li>
+                  Utilizes LLM to generate personalized parenting recommendations based on user data.
+                </li>
+              </ul>
+            </div>
+            {/* <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://drive.google.com/drive/folders/15tqlPaOe0r6KMW7opYhzbZv6EKx9Ad2_?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Watch demos
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div> */}
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
