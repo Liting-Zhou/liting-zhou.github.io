@@ -84,9 +84,7 @@ export default function Home() {
 
       {/* Education */}
       <section id="education" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent">
-          Education
-        </h2>
+        <h2 className="text-2xl font-semibold heading-accent">Education</h2>
         <div className="mt-6 space-y-4">
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -333,6 +331,49 @@ export default function Home() {
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <h3 className="font-medium text-lg mb-4">
+                Automatic Speech Recognition
+              </h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Fine-tuned OpenAI&#39;s Whisper model to improve recognition
+                  accuracy for aphasic speech.
+                </li>
+                <li>
+                  Implemented in Python and Shell, using PyTorch and the Hugging
+                  Face Transformers library.
+                </li>
+              </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://github.com/Liting-Zhou/Aphasic_speech_recognition"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View source
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">
                 Game of Kill Doctor Happy
               </h3>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
@@ -459,49 +500,6 @@ export default function Home() {
               </a>
             </div>
           </article>
-
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">
-                Automatic Speech Recognition
-              </h3>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
-                <li>
-                  Fine-tuned OpenAI&#39;s Whisper model to improve recognition
-                  accuracy for aphasic speech.
-                </li>
-                <li>
-                  Implemented in Python and Shell, using PyTorch and the Hugging
-                  Face Transformers library.
-                </li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://github.com/Liting-Zhou/Aphasic_speech_recognition"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                View source
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -512,7 +510,9 @@ export default function Home() {
         </h2>
         <div className="mt-4 space-y-4">
           <div>
-            <h3 className="text-lg font-medium mb-2 text-gray-700">Programming Languages:</h3>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">
+              Programming Languages:
+            </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">Java</span>
               <span className="chip">TypeScript</span>
@@ -522,9 +522,11 @@ export default function Home() {
               <span className="chip">C++</span>
             </div>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-medium mb-2 text-gray-700">Frontend Technologies:</h3>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">
+              Frontend Technologies:
+            </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">React.js</span>
               <span className="chip">Next.js</span>
@@ -533,18 +535,22 @@ export default function Home() {
               <span className="chip">Tailwind CSS</span>
             </div>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-medium mb-2 text-gray-700">Backend Technologies:</h3>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">
+              Backend Technologies:
+            </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">Node.js</span>
               <span className="chip">Express.js</span>
               <span className="chip">RESTful APIs</span>
             </div>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-medium mb-2 text-gray-700">Databases:</h3>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">
+              Databases:
+            </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">PostgreSQL</span>
               <span className="chip">MySQL</span>
@@ -553,17 +559,21 @@ export default function Home() {
               <span className="chip">Redis</span>
             </div>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-medium mb-2 text-gray-700">DevOps & Cloud:</h3>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">
+              DevOps & Cloud:
+            </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">Docker</span>
               <span className="chip">AWS</span>
             </div>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-medium mb-2 text-gray-700">Tools & Other Technologies:</h3>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">
+              Tools & Other Technologies:
+            </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">Git</span>
               <span className="chip">GitHub</span>
