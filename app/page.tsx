@@ -217,14 +217,14 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            {/* <div className="mt-auto pt-4 border-t border-gray-100">
+            <div className="mt-auto pt-4 border-t border-gray-100">
               <a
-                href="https://drive.google.com/drive/folders/15tqlPaOe0r6KMW7opYhzbZv6EKx9Ad2_?usp=drive_link"
+                href="https://www.getmina.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
               >
-                Watch demos
+                Visit landing page
                 <svg
                   className="w-3.5 h-3.5 ml-1"
                   aria-hidden="true"
@@ -241,7 +241,7 @@ export default function Home() {
                   />
                 </svg>
               </a>
-            </div> */}
+            </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
