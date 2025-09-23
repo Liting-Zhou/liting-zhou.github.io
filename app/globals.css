@@ -374,7 +374,7 @@ section[id] {
   /* First row: section navigation */
   .md\:hidden nav {
     gap: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     padding: 0.125rem 0;
   }
   
@@ -389,8 +389,8 @@ section[id] {
   }
   
   .md\:hidden svg {
-    width: 1rem;
-    height: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }
 
