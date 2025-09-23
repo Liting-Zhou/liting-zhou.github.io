@@ -88,30 +88,36 @@ export default function Home() {
       <section id="education" className="mb-12">
         <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">Education</h2>
         <div className="mt-6 space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm">
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <span className="font-medium">
                 Master of Science in Computer Science
-              </span>{" "}
-              · Northeastern University, Vancouver, Canada
+              </span>
+              <span className="text-sm text-gray-500">Sep 2023 – Dec 2024</span>
+            </div>
+            <p className="text-sm text-gray-600">
+              Northeastern University, Vancouver, Canada
             </p>
-            <span className="text-sm text-gray-500">Sep 2023 – Dec 2024</span>
           </div>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm">
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <span className="font-medium">
                 Master of Science in Economics
-              </span>{" "}
-              · University of Amsterdam, Amsterdam, Netherlands
+              </span>
+              <span className="text-sm text-gray-500">Sep 2009 – Aug 2011</span>
+            </div>
+            <p className="text-sm text-gray-600">
+              University of Amsterdam, Amsterdam, Netherlands
             </p>
-            <span className="text-sm text-gray-500">Sep 2009 – Aug 2011</span>
           </div>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm">
-              <span className="font-medium">Bachelor in Statistics</span> ·
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+              <span className="font-medium">Bachelor in Statistics</span>
+              <span className="text-sm text-gray-500">Sep 2005 – Jun 2009</span>
+            </div>
+            <p className="text-sm text-gray-600">
               Huazhong University of Science and Technology, Wuhan, China
             </p>
-            <span className="text-sm text-gray-500">Sep 2005 – Jun 2009</span>
           </div>
         </div>
       </section>
