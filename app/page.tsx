@@ -119,122 +119,137 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects" className="mb-12">
-        <div className="flex items-baseline justify-between gap-4">
-          <h2 className="text-2xl font-semibold heading-accent">Projects</h2>
-          <a
-            href="https://drive.google.com/drive/folders/15tqlPaOe0r6KMW7opYhzbZv6EKx9Ad2_?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm underline"
-          >
-            View all projects ↗
-          </a>
-        </div>
-        <div className="mt-6 grid sm:grid-cols-2 gap-6">
-          <article className="card p-5 transition-shadow hover:shadow-md">
-            <h3 className="font-medium">AI Experts for Enterprise</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
-              <li>
-                The platform leverages Retrieval-Augmented Generation (RAG) to
-                create customized AI agents for enterprises.
-              </li>
-              <li>
-                Built frontend components including landing page, application
-                interface, and admin panel using React and Next.js.
-              </li>
-              <li>
-                Implemented backend services using JavaScript and Python,
-                integrating with Stripe, Uber Eats, Google, Instagram, and other
-                APIs.
-              </li>
-              <li>
-                Constructed data pipelines for analytics visualization and
-                implemented LLM-powered suggestion features.
-              </li>
-              <li>
-                Automated deployment processes using GitHub Actions and AWS
-                infrastructure.
-              </li>
-            </ul>
+        <h2 className="text-2xl font-semibold heading-accent mb-6">Projects</h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="font-medium text-lg">AI Experts for Enterprise</h3>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Featured</span>
+              </div>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
+                <li>
+                  The platform leverages Retrieval-Augmented Generation (RAG) to
+                  create customized AI agents for enterprises.
+                </li>
+                <li>
+                  Built frontend components including landing page, application
+                  interface, and admin panel using React and Next.js.
+                </li>
+                <li>
+                  Implemented backend services using JavaScript and Python,
+                  integrating with Stripe, Uber Eats, Google, Instagram, and other
+                  APIs.
+                </li>
+                <li>
+                  Constructed data pipelines for analytics visualization and
+                  implemented LLM-powered suggestion features.
+                </li>
+                <li>
+                  Automated deployment processes using GitHub Actions and AWS
+                  infrastructure.
+                </li>
+              </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://drive.google.com/drive/folders/15tqlPaOe0r6KMW7opYhzbZv6EKx9Ad2_?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View project details
+                <svg className="w-3.5 h-3.5 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+              </a>
+            </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md">
-            <h3 className="font-medium">Game of Kill Doctor Happy</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
-              <li>
-                Developed a game similar to the classic board game Kill Doctor
-                Lucky using the MVC pattern.
-              </li>
-              <li>Utilized Java, JUnit for testing, and Java Swing for GUI.</li>
-              <li>Supported both text-based and GUI-based gameplay.</li>
-            </ul>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">Game of Kill Doctor Happy</h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
+                <li>
+                  Developed a game similar to the classic board game Kill Doctor
+                  Lucky using the MVC pattern.
+                </li>
+                <li>Utilized Java, JUnit for testing, and Java Swing for GUI.</li>
+                <li>Supported both text-based and GUI-based gameplay.</li>
+              </ul>
+            </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md">
-            <h3 className="font-medium">Currency Master Website</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
-              <li>
-                Built a dynamic website to inspect latest and historic exchange
-                rates, perform currency conversion, and manage assets.
-              </li>
-              <li>
-                Developed the frontend using React, JavaScript, HTML, and CSS,
-                and connected the backend with RESTful APIs to external
-                services.
-              </li>
-              <li>Utilized Prisma for database connectivity and management.</li>
-            </ul>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">Currency Master Website</h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Built a dynamic website to inspect latest and historic exchange
+                  rates, perform currency conversion, and manage assets.
+                </li>
+                <li>
+                  Developed the frontend using React, JavaScript, HTML, and CSS,
+                  and connected the backend with RESTful APIs to external services.
+                </li>
+                <li>Utilized Prisma for database connectivity and management.</li>
+              </ul>
+            </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md">
-            <h3 className="font-medium">Currency Manager App</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
-              <li>
-                Created a mobile app for monitoring exchange rates, currency
-                conversion, asset management, transaction history, and
-                notifications.
-              </li>
-              <li>Applied React Native, Expo framework for frontend.</li>
-              <li>
-                Utilized Firebase for database connectivity and management.
-              </li>
-            </ul>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">Currency Manager App</h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Created a mobile app for monitoring exchange rates, currency
+                  conversion, asset management, transaction history, and
+                  notifications.
+                </li>
+                <li>Applied React Native, Expo framework for frontend.</li>
+                <li>Utilized Firebase for database connectivity and management.</li>
+              </ul>
+            </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md">
-            <h3 className="font-medium">Virtual Memory Manager Simulator</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
-              <li>
-                Designed a VMM simulator incorporating interactions among page
-                table, TLB, OS, MMU, memory, and permanent storage.
-              </li>
-              <li>
-                Implemented in C++ with a focus on a two-level page table,
-                two-level TLB and supporting variable page sizes.
-              </li>
-            </ul>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">Virtual Memory Manager Simulator</h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Designed a VMM simulator incorporating interactions among page
+                  table, TLB, OS, MMU, memory, and permanent storage.
+                </li>
+                <li>
+                  Implemented in C++ with a focus on a two-level page table,
+                  two-level TLB and supporting variable page sizes.
+                </li>
+              </ul>
+            </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md">
-            <h3 className="font-medium">Shortest Path - SkyTrain Service</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
-              <li>
-                Applied and compared Dijkstra&#39;s and A<sup>∗</sup> algorithms
-                to generate the shortest path for each pair of SkyTrain stops in
-                Greater Vancouver.
-              </li>
-              <li>
-                Compared the fare change of transitioning from zone-based to
-                distance-based pricing systems.
-              </li>
-            </ul>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">Shortest Path - SkyTrain Service</h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Applied and compared Dijkstra's and A<sup>∗</sup> algorithms
+                  to generate the shortest path for each pair of SkyTrain stops in
+                  Greater Vancouver.
+                </li>
+                <li>
+                  Compared the fare change of transitioning from zone-based to
+                  distance-based pricing systems.
+                </li>
+              </ul>
+            </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md sm:col-span-2">
-            <h3 className="font-medium">Automatic Speech Recognition</h3>
-            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
+            <h3 className="font-medium text-lg mb-4">Automatic Speech Recognition</h3>
+            <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
               <li>
-                Fine-tuned OpenAI’s Whisper model to improve recognition
+                Fine-tuned OpenAI's Whisper model to improve recognition
                 accuracy for aphasic speech.
               </li>
               <li>
