@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base text and background */
+  --background: #fafaf7; /* light neutral base */
+  --foreground: #1a1a1a;
+
+  /* Brand palette (user provided) */
+  --primary: #A2D2DF; /* sky */
+  --secondary: #F6EFBD; /* sand */
+  --accent: #E4C087; /* golden tan */
+  --muted: #BC7C7C; /* rose */
 }
 
 @theme inline {
@@ -10,17 +17,77 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* Expose custom palette to Tailwind color tokens */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f1113;
+    --foreground: #e6e6e6;
+    /* Slightly deepen brand tones in dark */
+    --primary: #86C3D4;
+    --secondary: #EDE6A9;
+    --accent: #D8A86C;
+    --muted: #A06868;
   }
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(1200px 600px at -10% -10%, color-mix(in oklab, var(--secondary) 35%, #fff 65%), transparent 60%),
+    radial-gradient(1200px 600px at 110% -10%, color-mix(in oklab, var(--primary) 35%, #fff 65%), transparent 60%),
+    var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links */
+a {
+  color: var(--muted);
+}
+a:hover {
+  color: var(--accent);
+}
+
+/* Text selection */
+::selection {
+  background: color-mix(in oklab, var(--primary) 40%, #fff 60%);
+  color: #0f172a;
+}
+
+/* Simple utility helpers */
+.heading-accent {
+  position: relative;
+  padding-left: 0.75rem;
+}
+.heading-accent::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0.25rem;
+  width: 4px;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: var(--accent);
+}
+
+.card {
+  background: color-mix(in oklab, var(--secondary) 12%, #fff 88%);
+  border: 1px solid color-mix(in oklab, var(--primary) 25%, #0000 75%);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background: color-mix(in oklab, var(--primary) 25%, #fff 75%);
+  border: 1px solid color-mix(in oklab, var(--primary) 35%, #0000 65%);
+  color: #0f172a;
+  font-size: 0.75rem;
 }

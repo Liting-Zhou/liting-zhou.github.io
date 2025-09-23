@@ -35,37 +35,41 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="max-w-4xl mx-auto w-full px-6 py-8 flex items-center justify-between">
-          <Link href="/" className="text-xl font-semibold">Liting Zhou</Link>
-          <nav className="flex gap-4 text-sm">
-            <a href="#experience" className="hover:underline">Experience</a>
-            <a href="#education" className="hover:underline">Education</a>
-            <a href="#projects" className="hover:underline">Projects</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-            <span className="opacity-30">|</span>
-            <a
-              href="https://github.com/Liting-Zhou"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-              aria-label="GitHub profile"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/liting-zhou-8678b687/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-              aria-label="LinkedIn profile"
-            >
-              LinkedIn
-            </a>
-          </nav>
+        <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/50 bg-white/70 border-b border-black/5">
+          <div className="max-w-4xl mx-auto w-full px-6 py-4 flex items-center justify-between">
+            <Link href="/" className="text-xl font-semibold">Liting Zhou</Link>
+            <nav className="flex gap-4 text-sm">
+              <a href="#experience" className="hover:underline">Experience</a>
+              <a href="#education" className="hover:underline">Education</a>
+              <a href="#projects" className="hover:underline">Projects</a>
+              <a href="#contact" className="hover:underline">Contact</a>
+              <span className="opacity-30">|</span>
+              <a
+                href="https://github.com/Liting-Zhou"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+                aria-label="GitHub profile"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/liting-zhou-8678b687/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+                aria-label="LinkedIn profile"
+              >
+                LinkedIn
+              </a>
+            </nav>
+          </div>
         </header>
         <main className="max-w-4xl mx-auto w-full px-6">{children}</main>
-        <footer className="max-w-4xl mx-auto w-full px-6 py-12 text-sm text-gray-500">
-          © {new Date().getFullYear()} Liting Zhou
+        <footer className="mt-10 border-t border-black/5 bg-white/60">
+          <div className="max-w-4xl mx-auto w-full px-6 py-8 text-sm text-gray-600">
+            &copy; {new Date().getFullYear()} Liting Zhou
+          </div>
         </footer>
       </body>
     </html>

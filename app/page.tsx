@@ -3,7 +3,7 @@ export default function Home() {
     <div className="py-8 sm:py-12">
       {/* Intro */}
       <section className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold">Liting Zhou</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight" style={{color: "var(--color-foreground)"}}>Liting Zhou</h1>
         <p className="mt-2 text-sm text-gray-600">
           Vancouver, BC · <a href="mailto:lt.zhou1119@gmail.com" className="underline">lt.zhou1119@gmail.com</a> · 672-966-1119
         </p>
@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* Experience */}
       <section id="experience" className="mb-12">
-        <h2 className="text-2xl font-semibold">Professional Experience</h2>
+        <h2 className="text-2xl font-semibold heading-accent">Professional Experience</h2>
         <div className="mt-6 space-y-6">
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* Education */}
       <section id="education" className="mb-12">
-        <h2 className="text-2xl font-semibold">Education</h2>
+        <h2 className="text-2xl font-semibold heading-accent">Education</h2>
         <div className="mt-6 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm"><span className="font-medium">Master of Science in Computer Science</span> · Northeastern University, Vancouver, Canada</p>
@@ -72,7 +72,7 @@ export default function Home() {
       {/* Projects */}
       <section id="projects" className="mb-12">
         <div className="flex items-baseline justify-between gap-4">
-          <h2 className="text-2xl font-semibold">Projects</h2>
+          <h2 className="text-2xl font-semibold heading-accent">Projects</h2>
           <a
             href="https://drive.google.com/drive/folders/15tqlPaOe0r6KMW7opYhzbZv6EKx9Ad2_?usp=drive_link"
             target="_blank"
@@ -83,7 +83,7 @@ export default function Home() {
           </a>
         </div>
         <div className="mt-6 grid sm:grid-cols-2 gap-6">
-          <article className="rounded-lg border border-black/10 p-5">
+          <article className="card p-5 transition-shadow hover:shadow-md">
             <h3 className="font-medium">AI Experts for Enterprise</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>The platform leverages Retrieval-Augmented Generation (RAG) to create customized AI agents for enterprises.</li>
@@ -94,7 +94,7 @@ export default function Home() {
             </ul>
           </article>
 
-          <article className="rounded-lg border border-black/10 p-5">
+          <article className="card p-5 transition-shadow hover:shadow-md">
             <h3 className="font-medium">Game of Kill Doctor Happy</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>Developed a game similar to the classic board game Kill Doctor Lucky using the MVC pattern.</li>
@@ -103,7 +103,7 @@ export default function Home() {
             </ul>
           </article>
 
-          <article className="rounded-lg border border-black/10 p-5">
+          <article className="card p-5 transition-shadow hover:shadow-md">
             <h3 className="font-medium">Currency Master Website</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>Built a dynamic website to inspect latest and historic exchange rates, perform currency conversion, and manage assets.</li>
@@ -112,7 +112,7 @@ export default function Home() {
             </ul>
           </article>
 
-          <article className="rounded-lg border border-black/10 p-5">
+          <article className="card p-5 transition-shadow hover:shadow-md">
             <h3 className="font-medium">Currency Manager App</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>Created a mobile app for monitoring exchange rates, currency conversion, asset management, transaction history, and notifications.</li>
@@ -121,7 +121,7 @@ export default function Home() {
             </ul>
           </article>
 
-          <article className="rounded-lg border border-black/10 p-5 sm:col-span-2">
+          <article className="card p-5 transition-shadow hover:shadow-md sm:col-span-2">
             <h3 className="font-medium">Automatic Speech Recognition</h3>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
               <li>Fine-tuned OpenAI’s Whisper model to improve recognition accuracy for aphasic speech.</li>
@@ -133,10 +133,22 @@ export default function Home() {
 
       {/* Skills */}
       <section id="skills" className="mb-12">
-        <h2 className="text-2xl font-semibold">Technical Skills</h2>
-        <p className="mt-3 text-sm leading-6 text-gray-800">
-          JavaScript, TypeScript, Python, Java, SQL, NoSQL, Shell, C++, HTML, CSS, React, Node.js, RESTful APIs
-        </p>
+        <h2 className="text-2xl font-semibold heading-accent">Technical Skills</h2>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <span className="chip">JavaScript</span>
+          <span className="chip">TypeScript</span>
+          <span className="chip">Python</span>
+          <span className="chip">Java</span>
+          <span className="chip">SQL</span>
+          <span className="chip">NoSQL</span>
+          <span className="chip">Shell</span>
+          <span className="chip">C++</span>
+          <span className="chip">HTML</span>
+          <span className="chip">CSS</span>
+          <span className="chip">React</span>
+          <span className="chip">Node.js</span>
+          <span className="chip">RESTful APIs</span>
+        </div>
       </section>
 
       {/* Contact */}
