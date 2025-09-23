@@ -506,7 +506,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="mb-12">
+      <section id="skills">
         <h2 className="text-2xl font-semibold heading-accent">
           Technical Skills
         </h2>
