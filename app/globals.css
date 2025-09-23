@@ -350,26 +350,40 @@ section[id] {
     gap: 0.75rem;
   }
   
+  /* Reduce padding for mobile header */
+  header > div {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
   /* Center the mobile navigation when title is hidden */
   header > div > div {
     justify-content: center;
   }
   
-  /* Mobile navigation styling */
-  nav.md\:hidden {
-    gap: 0.5rem;
-    font-size: 0.75rem;
-    padding: 0.25rem 0;
-    max-width: 100%;
-    justify-content: center;
+  /* Mobile navigation container styling */
+  .md\:hidden.flex-col {
+    gap: 0.25rem;
   }
   
-  nav.md\:hidden a {
-    padding: 0.25rem 0.375rem;
+  /* First row: section navigation */
+  .md\:hidden nav {
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.125rem 0;
+  }
+  
+  .md\:hidden nav a {
+    padding: 0.125rem 0.25rem;
     white-space: nowrap;
   }
   
-  nav.md\:hidden svg {
+  /* Second row: social icons */
+  .md\:hidden div:last-child {
+    gap: 0.75rem;
+  }
+  
+  .md\:hidden svg {
     width: 1rem;
     height: 1rem;
   }
