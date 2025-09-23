@@ -3,9 +3,7 @@ export default function Home() {
     <div className="py-8 sm:py-12">
       {/* Intro */}
       <section className="mb-10">
-        <h1
-          className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pb-2"
-        >
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pb-2">
           Liting Zhou
         </h1>
         <p className="mt-2 text-sm text-gray-600">
@@ -86,7 +84,9 @@ export default function Home() {
 
       {/* Education */}
       <section id="education" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">Education</h2>
+        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
+          Education
+        </h2>
         <div className="mt-6 space-y-4">
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -124,7 +124,9 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Projects</h2>
+        <h2 className="text-2xl font-semibold heading-accent mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          Projects
+        </h2>
         <div className="grid sm:grid-cols-2 gap-6">
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
@@ -199,13 +201,17 @@ export default function Home() {
               </div>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
                 <li>
-                  The platform integrates second-hand trading and parenting Q&A to help parents efficiently and safely trade baby products while providing personalized parenting advice.
+                  The platform integrates second-hand trading and parenting Q&A
+                  to help parents efficiently and safely trade baby products
+                  while providing personalized parenting advice.
                 </li>
                 <li>
-                  Uses image recognition to automatically generate product titles and descriptions, improving user posting efficiency.
+                  Uses image recognition to automatically generate product
+                  titles and descriptions, improving user posting efficiency.
                 </li>
                 <li>
-                  Utilizes LLM to generate personalized parenting recommendations based on user data.
+                  Utilizes LLM to generate personalized parenting
+                  recommendations based on user data.
                 </li>
               </ul>
             </div>
@@ -234,49 +240,6 @@ export default function Home() {
                 </svg>
               </a>
             </div> */}
-          </article>
-
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">
-                Game of Kill Doctor Happy
-              </h3>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
-                <li>
-                  Developed a game similar to the classic board game Kill Doctor
-                  Lucky using the MVC pattern.
-                </li>
-                <li>
-                  Utilized Java, JUnit for testing, and Java Swing for GUI.
-                </li>
-                <li>Supported both text-based and GUI-based gameplay.</li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://github.com/Liting-Zhou/the-world"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                View source
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
@@ -350,6 +313,49 @@ export default function Home() {
                 className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
               >
                 Watch demo
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">
+                Game of Kill Doctor Happy
+              </h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
+                <li>
+                  Developed a game similar to the classic board game Kill Doctor
+                  Lucky using the MVC pattern.
+                </li>
+                <li>
+                  Utilized Java, JUnit for testing, and Java Swing for GUI.
+                </li>
+                <li>Supported both text-based and GUI-based gameplay.</li>
+              </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://github.com/Liting-Zhou/the-world"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View source
                 <svg
                   className="w-3.5 h-3.5 ml-1"
                   aria-hidden="true"
@@ -456,20 +462,22 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="card p-5 transition-shadow hover:shadow-md sm:col-span-2">
-            <h3 className="font-medium text-lg mb-4">
-              Automatic Speech Recognition
-            </h3>
-            <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
-              <li>
-                Fine-tuned OpenAI&#39;s Whisper model to improve recognition
-                accuracy for aphasic speech.
-              </li>
-              <li>
-                Implemented in Python and Shell, using PyTorch and the Hugging
-                Face Transformers library.
-              </li>
-            </ul>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">
+                Automatic Speech Recognition
+              </h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Fine-tuned OpenAI&#39;s Whisper model to improve recognition
+                  accuracy for aphasic speech.
+                </li>
+                <li>
+                  Implemented in Python and Shell, using PyTorch and the Hugging
+                  Face Transformers library.
+                </li>
+              </ul>
+            </div>
             <div className="mt-auto pt-4 border-t border-gray-100">
               <a
                 href="https://github.com/Liting-Zhou/Aphasic_speech_recognition"
