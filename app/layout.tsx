@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceSerif = Source_Serif_4({
+  weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-serif",
 });
 
 export const metadata: Metadata = {
@@ -21,9 +25,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Liting Zhou | Resume & Portfolio",
     description:
-      "Software Engineer with experience in React, Next.js, TypeScript, Python, AWS. View resume and selected projects.",
+      "Software Engineer | Resume, projects, and contact information.",
     url: "https://liting-zhou.github.io",
     siteName: "Liting Zhou",
+    locale: "en_US",
     type: "website",
   },
 };
@@ -34,10 +39,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${inter.variable} ${sourceSerif.variable} scroll-smooth`}
+    >
+      <body className="antialiased">
         <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/50 bg-white/70 border-b border-black/5">
           <div className="max-w-4xl mx-auto w-full px-6 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold">
@@ -78,7 +84,7 @@ export default function RootLayout({
             </nav>
           </div>
         </header>
-        <main className="max-w-4xl mx-auto w-full px-6">{children}</main>
+        <main className="max-w-4xl mx-auto w-full px-6 py-8">{children}</main>
         <footer className="mt-10 border-t border-black/5 bg-white/60">
           <div className="max-w-4xl mx-auto w-full px-6 py-8 text-sm text-gray-600">
             &copy; {new Date().getFullYear()} Liting Zhou
