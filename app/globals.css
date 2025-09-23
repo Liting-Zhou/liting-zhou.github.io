@@ -60,7 +60,8 @@ a:hover {
 /* Project links with enhanced styling */
 a[href*="github.com"],
 a[href*="youtube.com"],
-a[href*="drive.google.com"] {
+a[href*="drive.google.com"],
+a[href*="linkedin.com"] {
   background: linear-gradient(135deg, 
     color-mix(in oklab, var(--vibrant-blue) 15%, #fff 85%) 0%, 
     color-mix(in oklab, var(--primary) 20%, #fff 80%) 100%);
@@ -74,7 +75,8 @@ a[href*="drive.google.com"] {
 
 a[href*="github.com"]:hover,
 a[href*="youtube.com"]:hover,
-a[href*="drive.google.com"]:hover {
+a[href*="drive.google.com"]:hover,
+a[href*="linkedin.com"]:hover {
   background: linear-gradient(135deg, 
     color-mix(in oklab, var(--vibrant-purple) 25%, #fff 75%) 0%, 
     color-mix(in oklab, var(--vibrant-pink) 20%, #fff 80%) 100%);

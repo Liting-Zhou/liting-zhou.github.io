@@ -67,7 +67,6 @@ export default function RootLayout({
                 href="https://github.com/Liting-Zhou"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
                 aria-label="GitHub profile"
               >
                 GitHub
@@ -76,7 +75,6 @@ export default function RootLayout({
                 href="https://www.linkedin.com/in/liting-zhou-8678b687/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
                 aria-label="LinkedIn profile"
               >
                 LinkedIn
