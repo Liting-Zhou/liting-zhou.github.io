@@ -12,17 +12,6 @@
   --muted: #BC7C7C; /* rose */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif);
-  /* Expose custom palette to Tailwind color tokens */
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --color-muted: var(--muted);
-}
 
 /* Base typography */
 html {
@@ -38,7 +27,7 @@ body {
     radial-gradient(1200px 600px at 110% -10%, color-mix(in oklab, var(--primary) 35%, #fff 65%), transparent 60%),
     var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html {
@@ -51,6 +40,11 @@ a {
 }
 a:hover {
   color: var(--accent);
+}
+
+/* Colored list markers for lists using Tailwind's list-disc */
+ul.list-disc li::marker {
+  color: color-mix(in oklab, var(--muted) 70%, var(--foreground) 30%);
 }
 
 /* Text selection */
@@ -82,6 +76,12 @@ a:hover {
   box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
 }
 
+.card:hover {
+  border-color: color-mix(in oklab, var(--accent) 40%, #0000 60%);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.08);
+}
+
 .chip {
   display: inline-block;
   padding: 0.125rem 0.5rem;
@@ -90,6 +90,11 @@ a:hover {
   border: 1px solid color-mix(in oklab, var(--primary) 35%, #0000 65%);
   color: #0f172a;
   font-size: 0.75rem;
+}
+
+.chip:hover {
+  background: color-mix(in oklab, var(--primary) 35%, #fff 65%);
+  border-color: color-mix(in oklab, var(--accent) 45%, #0000 55%);
 }
 
 /* Anchor offset for sticky header */

@@ -124,8 +124,12 @@ export default function Home() {
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="font-medium text-lg">AI Experts for Enterprise</h3>
-                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Featured</span>
+                <h3 className="font-medium text-lg">
+                  AI Experts for Enterprise
+                </h3>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                  Featured
+                </span>
               </div>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
                 <li>
@@ -138,8 +142,8 @@ export default function Home() {
                 </li>
                 <li>
                   Implemented backend services using JavaScript and Python,
-                  integrating with Stripe, Uber Eats, Google, Instagram, and other
-                  APIs.
+                  integrating with Stripe, Uber Eats, Google, Instagram, and
+                  other APIs.
                 </li>
                 <li>
                   Constructed data pipelines for analytics visualization and
@@ -158,9 +162,21 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
               >
-                View project details
-                <svg className="w-3.5 h-3.5 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                View project demo
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
                 </svg>
               </a>
             </div>
@@ -168,13 +184,17 @@ export default function Home() {
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">Game of Kill Doctor Happy</h3>
+              <h3 className="font-medium text-lg mb-4">
+                Game of Kill Doctor Happy
+              </h3>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
                 <li>
                   Developed a game similar to the classic board game Kill Doctor
                   Lucky using the MVC pattern.
                 </li>
-                <li>Utilized Java, JUnit for testing, and Java Swing for GUI.</li>
+                <li>
+                  Utilized Java, JUnit for testing, and Java Swing for GUI.
+                </li>
                 <li>Supported both text-based and GUI-based gameplay.</li>
               </ul>
             </div>
@@ -182,17 +202,23 @@ export default function Home() {
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">Currency Master Website</h3>
+              <h3 className="font-medium text-lg mb-4">
+                Currency Master Website
+              </h3>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
                 <li>
-                  Built a dynamic website to inspect latest and historic exchange
-                  rates, perform currency conversion, and manage assets.
+                  Built a dynamic website to inspect latest and historic
+                  exchange rates, perform currency conversion, and manage
+                  assets.
                 </li>
                 <li>
                   Developed the frontend using React, JavaScript, HTML, and CSS,
-                  and connected the backend with RESTful APIs to external services.
+                  and connected the backend with RESTful APIs to external
+                  services.
                 </li>
-                <li>Utilized Prisma for database connectivity and management.</li>
+                <li>
+                  Utilized Prisma for database connectivity and management.
+                </li>
               </ul>
             </div>
           </article>
@@ -207,14 +233,18 @@ export default function Home() {
                   notifications.
                 </li>
                 <li>Applied React Native, Expo framework for frontend.</li>
-                <li>Utilized Firebase for database connectivity and management.</li>
+                <li>
+                  Utilized Firebase for database connectivity and management.
+                </li>
               </ul>
             </div>
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">Virtual Memory Manager Simulator</h3>
+              <h3 className="font-medium text-lg mb-4">
+                Virtual Memory Manager Simulator
+              </h3>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
                 <li>
                   Designed a VMM simulator incorporating interactions among page
@@ -230,12 +260,14 @@ export default function Home() {
 
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">Shortest Path - SkyTrain Service</h3>
+              <h3 className="font-medium text-lg mb-4">
+                Shortest Path - SkyTrain Service
+              </h3>
               <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
                 <li>
-                  Applied and compared Dijkstra's and A<sup>∗</sup> algorithms
-                  to generate the shortest path for each pair of SkyTrain stops in
-                  Greater Vancouver.
+                  Applied and compared Dijkstra&#39;s and A<sup>∗</sup>{" "}
+                  algorithms to generate the shortest path for each pair of
+                  SkyTrain stops in Greater Vancouver.
                 </li>
                 <li>
                   Compared the fare change of transitioning from zone-based to
@@ -246,10 +278,12 @@ export default function Home() {
           </article>
 
           <article className="card p-5 transition-shadow hover:shadow-md sm:col-span-2">
-            <h3 className="font-medium text-lg mb-4">Automatic Speech Recognition</h3>
+            <h3 className="font-medium text-lg mb-4">
+              Automatic Speech Recognition
+            </h3>
             <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
               <li>
-                Fine-tuned OpenAI's Whisper model to improve recognition
+                Fine-tuned OpenAI&#39;s Whisper model to improve recognition
                 accuracy for aphasic speech.
               </li>
               <li>
