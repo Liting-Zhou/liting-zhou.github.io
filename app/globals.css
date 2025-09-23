@@ -10,6 +10,13 @@
   --secondary: #F6EFBD; /* sand */
   --accent: #E4C087; /* golden tan */
   --muted: #BC7C7C; /* rose */
+  
+  /* Additional vibrant colors for enhancement */
+  --vibrant-blue: #7dd3fc; /* bright sky blue */
+  --vibrant-purple: #c084fc; /* soft purple */
+  --vibrant-green: #86efac; /* mint green */
+  --vibrant-orange: #fdba74; /* warm orange */
+  --vibrant-pink: #f9a8d4; /* soft pink */
 }
 
 
@@ -23,11 +30,15 @@ html {
 
 body {
   background:
+    radial-gradient(800px 400px at 20% 30%, color-mix(in oklab, var(--vibrant-blue) 25%, #fff 75%), transparent 70%),
+    radial-gradient(600px 600px at 80% 10%, color-mix(in oklab, var(--vibrant-purple) 20%, #fff 80%), transparent 65%),
+    radial-gradient(1000px 500px at 70% 80%, color-mix(in oklab, var(--vibrant-pink) 15%, #fff 85%), transparent 60%),
     radial-gradient(1200px 600px at -10% -10%, color-mix(in oklab, var(--secondary) 35%, #fff 65%), transparent 60%),
     radial-gradient(1200px 600px at 110% -10%, color-mix(in oklab, var(--primary) 35%, #fff 65%), transparent 60%),
-    var(--background);
+    linear-gradient(135deg, color-mix(in oklab, var(--vibrant-green) 8%, #fff 92%) 0%, var(--background) 100%);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  animation: backgroundPulse 20s ease-in-out infinite;
 }
 
 html {
@@ -37,20 +48,44 @@ html {
 /* Links */
 a {
   color: var(--muted);
+  transition: all 0.3s ease;
+  position: relative;
 }
+
 a:hover {
   color: var(--accent);
+  text-shadow: 0 0 8px color-mix(in oklab, var(--vibrant-purple) 30%, #0000 70%);
+}
+
+/* Project links with enhanced styling */
+a[href*="github.com"],
+a[href*="youtube.com"],
+a[href*="drive.google.com"] {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--vibrant-blue) 15%, #fff 85%) 0%, 
+    color-mix(in oklab, var(--primary) 20%, #fff 80%) 100%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid color-mix(in oklab, var(--primary) 30%, #0000 70%);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a[href*="github.com"]:hover,
+a[href*="youtube.com"]:hover,
+a[href*="drive.google.com"]:hover {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--vibrant-purple) 25%, #fff 75%) 0%, 
+    color-mix(in oklab, var(--vibrant-pink) 20%, #fff 80%) 100%);
+  border-color: color-mix(in oklab, var(--accent) 50%, #0000 50%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px color-mix(in oklab, var(--vibrant-blue) 20%, #0000 80%);
 }
 
 /* Colored list markers for lists using Tailwind's list-disc */
 ul.list-disc li::marker {
   color: color-mix(in oklab, var(--muted) 70%, var(--foreground) 30%);
-}
-
-/* Text selection */
-::selection {
-  background: color-mix(in oklab, var(--primary) 40%, #fff 60%);
-  color: #0f172a;
 }
 
 /* Simple utility helpers */
@@ -66,38 +101,220 @@ ul.list-disc li::marker {
   width: 4px;
   height: 1.5rem;
   border-radius: 9999px;
-  background: var(--accent);
+  background: linear-gradient(135deg, 
+    var(--accent) 0%, 
+    var(--vibrant-orange) 50%, 
+    var(--vibrant-pink) 100%);
+  animation: accentPulse 3s ease-in-out infinite;
+}
+
+@keyframes accentPulse {
+  0%, 100% { 
+    transform: scaleY(1); 
+    opacity: 1;
+  }
+  50% { 
+    transform: scaleY(1.1); 
+    opacity: 0.8;
+  }
 }
 
 .card {
-  background: color-mix(in oklab, var(--secondary) 12%, #fff 88%);
-  border: 1px solid color-mix(in oklab, var(--primary) 25%, #0000 75%);
+  position: relative;
+  background: 
+    linear-gradient(135deg, 
+      color-mix(in oklab, var(--secondary) 15%, #fff 85%) 0%, 
+      color-mix(in oklab, var(--primary) 10%, #fff 90%) 100%);
+  border: 1px solid color-mix(in oklab, var(--primary) 30%, #0000 70%);
   border-radius: 0.75rem;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 
+    0 1px 0 rgba(0,0,0,0.04), 
+    0 2px 8px rgba(0,0,0,0.04),
+    0 0 20px color-mix(in oklab, var(--vibrant-blue) 5%, #0000 95%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .card:hover {
-  border-color: color-mix(in oklab, var(--accent) 40%, #0000 60%);
-  transform: translateY(-2px);
-  box-shadow: 0 2px 0 rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.08);
+  border-color: color-mix(in oklab, var(--accent) 50%, #0000 50%);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 2px 0 rgba(0,0,0,0.05), 
+    0 12px 24px rgba(0,0,0,0.12),
+    0 0 30px color-mix(in oklab, var(--vibrant-purple) 15%, #0000 85%);
+  background: 
+    linear-gradient(135deg, 
+      color-mix(in oklab, var(--secondary) 20%, #fff 80%) 0%, 
+      color-mix(in oklab, var(--primary) 15%, #fff 85%) 100%);
 }
 
 .chip {
   display: inline-block;
-  padding: 0.125rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  background: color-mix(in oklab, var(--primary) 25%, #fff 75%);
-  border: 1px solid color-mix(in oklab, var(--primary) 35%, #0000 65%);
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--primary) 30%, #fff 70%) 0%, 
+    color-mix(in oklab, var(--vibrant-blue) 25%, #fff 75%) 100%);
+  border: 1px solid color-mix(in oklab, var(--primary) 40%, #0000 60%);
   color: #0f172a;
   font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.chip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    color-mix(in oklab, var(--vibrant-purple) 20%, #fff 80%), 
+    transparent);
+  transition: left 0.5s ease;
+}
+
+.chip:hover::before {
+  left: 100%;
 }
 
 .chip:hover {
-  background: color-mix(in oklab, var(--primary) 35%, #fff 65%);
-  border-color: color-mix(in oklab, var(--accent) 45%, #0000 55%);
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--accent) 40%, #fff 60%) 0%, 
+    color-mix(in oklab, var(--vibrant-orange) 35%, #fff 65%) 100%);
+  border-color: color-mix(in oklab, var(--vibrant-pink) 50%, #0000 50%);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px color-mix(in oklab, var(--primary) 20%, #0000 80%);
+}
+
+/* Different colored chips */
+.chip:nth-child(3n+1) {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--vibrant-green) 25%, #fff 75%) 0%, 
+    color-mix(in oklab, var(--primary) 30%, #fff 70%) 100%);
+}
+
+.chip:nth-child(3n+2) {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--vibrant-orange) 25%, #fff 75%) 0%, 
+    color-mix(in oklab, var(--accent) 30%, #fff 70%) 100%);
+}
+
+.chip:nth-child(3n+3) {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--vibrant-pink) 25%, #fff 75%) 0%, 
+    color-mix(in oklab, var(--muted) 30%, #fff 70%) 100%);
 }
 
 /* Anchor offset for sticky header */
+
+/* Background animation */
+@keyframes backgroundPulse {
+  0%, 100% {
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  25% {
+    filter: hue-rotate(5deg) brightness(1.02);
+  }
+  50% {
+    filter: hue-rotate(10deg) brightness(1.05);
+  }
+  75% {
+    filter: hue-rotate(5deg) brightness(1.02);
+  }
+}
+
+@keyframes accentPulse {
+  0%, 100% { 
+    transform: scaleY(1); 
+    opacity: 1;
+  }
+  50% { 
+    transform: scaleY(1.1); 
+    opacity: 0.8;
+  }
+}
+
+/* Floating animation for cards */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Subtle animations for sections */
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add staggered animation delays for sections */
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+section:nth-child(4) { animation-delay: 0.4s; }
+section:nth-child(5) { animation-delay: 0.5s; }
+
+/* Enhanced project cards with subtle float animation */
+.card:nth-child(odd) {
+  animation: float 6s ease-in-out infinite;
+}
+
+.card:nth-child(even) {
+  animation: float 6s ease-in-out infinite reverse;
+  animation-delay: -3s;
+}
+
+/* Enhanced border glow effect on hover */
+.card::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, 
+    var(--vibrant-blue), var(--vibrant-purple), 
+    var(--vibrant-pink), var(--vibrant-orange), 
+    var(--vibrant-green), var(--vibrant-blue));
+  border-radius: inherit;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+.card:hover::after {
+  opacity: 0.3;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Enhanced text selection with colorful background */
+::selection {
+  background: linear-gradient(135deg, 
+    color-mix(in oklab, var(--vibrant-blue) 40%, #fff 60%) 0%,
+    color-mix(in oklab, var(--vibrant-purple) 30%, #fff 70%) 100%);
+  color: #0f172a;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
 section[id] {
   scroll-margin-top: 88px;
 }

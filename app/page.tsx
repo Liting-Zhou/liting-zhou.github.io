@@ -4,8 +4,7 @@ export default function Home() {
       {/* Intro */}
       <section className="mb-10">
         <h1
-          className="text-4xl sm:text-5xl font-bold tracking-tight"
-          style={{ color: "var(--color-foreground)" }}
+          className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
         >
           Liting Zhou
         </h1>
@@ -20,7 +19,7 @@ export default function Home() {
 
       {/* Experience */}
       <section id="experience" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent">
+        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
           Professional Experience
         </h2>
         <div className="mt-6 space-y-6">
@@ -87,7 +86,7 @@ export default function Home() {
 
       {/* Education */}
       <section id="education" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent">Education</h2>
+        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">Education</h2>
         <div className="mt-6 space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm">
@@ -119,7 +118,7 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent mb-6">Projects</h2>
+        <h2 className="text-2xl font-semibold heading-accent mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Projects</h2>
         <div className="grid sm:grid-cols-2 gap-6">
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
@@ -127,7 +126,7 @@ export default function Home() {
                 <h3 className="font-medium text-lg">
                   AI Experts for Enterprise
                 </h3>
-                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                <span className="text-xs bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full font-semibold shadow-md">
                   Featured
                 </span>
               </div>
@@ -447,7 +446,7 @@ export default function Home() {
 
       {/* Skills */}
       <section id="skills" className="mb-12">
-        <h2 className="text-2xl font-semibold heading-accent">
+        <h2 className="text-2xl font-semibold heading-accent bg-gradient-to-r from-teal-600 to-green-600 bg-clip-text text-transparent">
           Technical Skills
         </h2>
         <div className="mt-4 flex flex-wrap gap-2">
