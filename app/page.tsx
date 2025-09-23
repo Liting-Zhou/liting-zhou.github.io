@@ -510,24 +510,68 @@ export default function Home() {
         <h2 className="text-2xl font-semibold heading-accent">
           Technical Skills
         </h2>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <span className="chip">JavaScript</span>
-          <span className="chip">TypeScript</span>
-          <span className="chip">Python</span>
-          <span className="chip">Java</span>
-          <span className="chip">SQL</span>
-          <span className="chip">NoSQL</span>
-          <span className="chip">Shell</span>
-          <span className="chip">C++</span>
-          <span className="chip">HTML</span>
-          <span className="chip">CSS</span>
-          <span className="chip">React.js</span>
-          <span className="chip">Next.js</span>
-          <span className="chip">Node.js</span>
-          <span className="chip">Express.js</span>
-          <span className="chip">RESTful APIs</span>
-          <span className="chip">AWS</span>
-          <span className="chip">Docker</span>
+        <div className="mt-4 space-y-4">
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">Programming Languages:</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="chip">Java</span>
+              <span className="chip">TypeScript</span>
+              <span className="chip">JavaScript</span>
+              <span className="chip">Python</span>
+              <span className="chip">Shell</span>
+              <span className="chip">C++</span>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">Frontend Technologies:</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="chip">React.js</span>
+              <span className="chip">Next.js</span>
+              <span className="chip">HTML</span>
+              <span className="chip">CSS</span>
+              <span className="chip">Tailwind CSS</span>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">Backend Technologies:</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="chip">Node.js</span>
+              <span className="chip">Express.js</span>
+              <span className="chip">RESTful APIs</span>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">Databases:</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="chip">PostgreSQL</span>
+              <span className="chip">MySQL</span>
+              <span className="chip">MongoDB</span>
+              <span className="chip">DynamoDB</span>
+              <span className="chip">Redis</span>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">DevOps & Cloud:</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="chip">Docker</span>
+              <span className="chip">AWS</span>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-medium mb-2 text-gray-700">Tools & Other Technologies:</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="chip">Git</span>
+              <span className="chip">GitHub</span>
+              <span className="chip">Yarn</span>
+              <span className="chip">pnpm</span>
+              <span className="chip">npm</span>
+            </div>
+          </div>
         </div>
       </section>
     </div>
