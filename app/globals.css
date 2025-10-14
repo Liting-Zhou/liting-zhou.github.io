@@ -87,7 +87,8 @@ a[href*="youtube.com"],
 a[href*="youtu.be"],
 a[href*="drive.google.com"],
 a[href*="getmina.app"],
-a[href*="linkedin.com"] {
+a[href*="linkedin.com"],
+a[href*="vercel.app"] {
   background: linear-gradient(
     135deg,
     color-mix(in oklab, var(--vibrant-blue) 15%, #fff 85%) 0%,
@@ -106,7 +107,8 @@ a[href*="youtube.com"]:hover,
 a[href*="youtu.be"]:hover,
 a[href*="drive.google.com"]:hover,
 a[href*="getmina.app"]:hover,
-a[href*="linkedin.com"]:hover {
+a[href*="linkedin.com"]:hover,
+a[href*="vercel.app"] :hover {
   background: linear-gradient(
     135deg,
     color-mix(in oklab, var(--vibrant-purple) 25%, #fff 75%) 0%,
