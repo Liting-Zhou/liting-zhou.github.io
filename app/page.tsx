@@ -130,6 +130,7 @@ export default function Home() {
       <section id="projects" className="mb-12">
         <h2 className="text-2xl font-semibold heading-accent mb-6">Projects</h2>
         <div className="grid sm:grid-cols-2 gap-6">
+          {/* always visible */}
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <div className="flex items-start justify-between mb-4">
@@ -190,7 +191,6 @@ export default function Home() {
               </a>
             </div>
           </article>
-
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <div className="flex items-start justify-between mb-4">
@@ -208,12 +208,16 @@ export default function Home() {
                   while providing personalized parenting advice.
                 </li>
                 <li>
-                  Uses image recognition to automatically generate product
-                  titles and descriptions, improving user posting efficiency.
+                  Leverages AI-powered image recognition to automatically
+                  generate product titles and descriptions, enhancing user
+                  posting efficiency.
                 </li>
                 <li>
                   Utilizes LLM to generate personalized parenting
                   recommendations based on user data.
+                </li>
+                <li>
+                  Built with Next.js and Firebase, and integrated with Stripe.
                 </li>
               </ul>
             </div>
@@ -243,7 +247,94 @@ export default function Home() {
               </a>
             </div>
           </article>
-
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">Voice Timer</h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  A modern, user-friendly web application for setting timers in
+                  any scenario—whether for cooking, workouts, study sessions, or
+                  other tasks—with voice input functionality, designed to help
+                  users manage multiple timers simultaneously.
+                </li>
+                <li>
+                  Voice Command Input: Set timers hands-free using natural
+                  language
+                </li>
+                <li>
+                  Built with React, TypeScript, Tailwind CSS, Google Gemini API,
+                  and Vite
+                </li>
+              </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://voicetimer.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Visit website
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <h3 className="font-medium text-lg mb-4">
+                Automatic Speech Recognition
+              </h3>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
+                <li>
+                  Fine-tuned OpenAI&#39;s Whisper model to improve recognition
+                  accuracy for aphasic speech.
+                </li>
+                <li>
+                  Implemented in Python and Shell, using PyTorch and the Hugging
+                  Face Transformers library.
+                </li>
+              </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://github.com/Liting-Zhou/Aphasic_speech_recognition"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                View source
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <h3 className="font-medium text-lg mb-4">
@@ -291,7 +382,6 @@ export default function Home() {
               </a>
             </div>
           </article>
-
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <h3 className="font-medium text-lg mb-4">Currency Manager App</h3>
@@ -334,96 +424,52 @@ export default function Home() {
             </div>
           </article>
 
-          {/* Always visible */}
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">
-                Automatic Speech Recognition
-              </h3>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6">
-                <li>
-                  Fine-tuned OpenAI&#39;s Whisper model to improve recognition
-                  accuracy for aphasic speech.
-                </li>
-                <li>
-                  Implemented in Python and Shell, using PyTorch and the Hugging
-                  Face Transformers library.
-                </li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://github.com/Liting-Zhou/Aphasic_speech_recognition"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                View source
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <h3 className="font-medium text-lg mb-4">
-                Game of Kill Doctor Happy
-              </h3>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
-                <li>
-                  Developed a game similar to the classic board game Kill Doctor
-                  Lucky using the MVC pattern.
-                </li>
-                <li>
-                  Utilized Java, JUnit for testing, and Java Swing for GUI.
-                </li>
-                <li>Supported both text-based and GUI-based gameplay.</li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://github.com/Liting-Zhou/the-world"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                View source
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
-
           {/* Collapsible projects*/}
           {!showAllProjects ? null : (
             <>
+              {" "}
+              <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+                <div className="flex-1">
+                  <h3 className="font-medium text-lg mb-4">
+                    Game of Kill Doctor Happy
+                  </h3>
+                  <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
+                    <li>
+                      Developed a game similar to the classic board game Kill
+                      Doctor Lucky using the MVC pattern.
+                    </li>
+                    <li>
+                      Utilized Java, JUnit for testing, and Java Swing for GUI.
+                    </li>
+                    <li>Supported both text-based and GUI-based gameplay.</li>
+                  </ul>
+                </div>
+                <div className="mt-auto pt-4 border-t border-gray-100">
+                  <a
+                    href="https://github.com/Liting-Zhou/the-world"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+                  >
+                    View source
+                    <svg
+                      className="w-3.5 h-3.5 ml-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
               <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
                 <div className="flex-1">
                   <h3 className="font-medium text-lg mb-4">
@@ -466,7 +512,6 @@ export default function Home() {
                   </a>
                 </div>
               </article>
-
               <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
                 <div className="flex-1">
                   <h3 className="font-medium text-lg mb-4">
