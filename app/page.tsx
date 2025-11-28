@@ -30,10 +30,31 @@ export default function Home() {
           <div>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <h3 className="text-lg font-medium">
-                Software Engineer · AtlasNova AI
+                Founding Software Engineer · Mina AI
               </h3>
               <span className="text-sm text-gray-500">
-                Feb 2025 – Present · Cupertino, US
+                Oct 2025 – Present · San Francisco, US
+              </span>
+            </div>
+            <ul className="list-disc ms-5 mt-2 text-sm leading-6">
+              <li>
+                Full-stack development using TypeScript, Next.js, and React
+                Native.
+              </li>
+              <li>
+                Deployed the platform on Google Cloud and Firebase with secure
+                Stripe checkout.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+              <h3 className="text-lg font-medium">
+                Software Engineer Intern · AtlasNova AI
+              </h3>
+              <span className="text-sm text-gray-500">
+                Feb 2025 – Sep 2025 · Cupertino, US
               </span>
             </div>
             <ul className="list-disc ms-5 mt-2 text-sm leading-6">
@@ -131,6 +152,66 @@ export default function Home() {
         <h2 className="text-2xl font-semibold heading-accent mb-6">Projects</h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {/* always visible */}
+          {/* Mina */}
+          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
+            <div className="flex-1">
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="font-medium text-lg">
+                  Maternal & Baby Second-hand Market with AI Parenting
+                </h3>
+                <span className="text-xs bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full font-semibold shadow-md">
+                  Featured
+                </span>
+              </div>
+              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
+                <li>
+                  The platform integrates second-hand trading and parenting Q&A
+                  to help parents efficiently and safely trade baby products
+                  while providing personalized parenting advice.
+                </li>
+                <li>
+                  Leverages AI-powered image recognition to automatically
+                  generate product titles and descriptions, enhancing user
+                  posting efficiency.
+                </li>
+                <li>
+                  Utilizes LLM to generate personalized parenting
+                  recommendations based on user data.
+                </li>
+                <li>
+                  Built with React Native, Next.js and Firebase, and integrated
+                  with Stripe.
+                </li>
+              </ul>
+            </div>
+            <div className="mt-auto pt-4 border-t border-gray-100">
+              <a
+                href="https://www.getmina.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                Visit landing page
+                <svg
+                  className="w-3.5 h-3.5 ml-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          {/* AtlasNova */}
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <div className="flex items-start justify-between mb-4">
@@ -156,8 +237,7 @@ export default function Home() {
                   other APIs.
                 </li>
                 <li>
-                  Constructed data pipelines for analytics visualization and
-                  implemented LLM-powered AI agent suggestion features.
+                  Constructed data pipelines for analytics visualization.
                 </li>
                 <li>
                   Automated deployment processes using GitHub Actions and AWS
@@ -191,62 +271,8 @@ export default function Home() {
               </a>
             </div>
           </article>
-          <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
-            <div className="flex-1">
-              <div className="flex items-start justify-between mb-4">
-                <h3 className="font-medium text-lg">
-                  Maternal & Baby Second-hand Market with AI Parenting
-                </h3>
-                <span className="text-xs bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full font-semibold shadow-md">
-                  Featured
-                </span>
-              </div>
-              <ul className="list-disc ms-5 space-y-2 text-sm leading-6 mb-4">
-                <li>
-                  The platform integrates second-hand trading and parenting Q&A
-                  to help parents efficiently and safely trade baby products
-                  while providing personalized parenting advice.
-                </li>
-                <li>
-                  Leverages AI-powered image recognition to automatically
-                  generate product titles and descriptions, enhancing user
-                  posting efficiency.
-                </li>
-                <li>
-                  Utilizes LLM to generate personalized parenting
-                  recommendations based on user data.
-                </li>
-                <li>
-                  Built with Next.js and Firebase, and integrated with Stripe.
-                </li>
-              </ul>
-            </div>
-            <div className="mt-auto pt-4 border-t border-gray-100">
-              <a
-                href="https://www.getmina.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 hover:underline"
-              >
-                Visit landing page
-                <svg
-                  className="w-3.5 h-3.5 ml-1"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.5"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
+
+          {/* Voice Timer */}
           <article className="card p-5 transition-shadow hover:shadow-md flex flex-col h-full">
             <div className="flex-1">
               <h3 className="font-medium text-lg mb-4">Voice Timer</h3>
@@ -259,11 +285,11 @@ export default function Home() {
                 </li>
                 <li>
                   Voice Command Input: Set timers hands-free using natural
-                  language
+                  language.
                 </li>
                 <li>
                   Built with React, TypeScript, Tailwind CSS, Google Gemini API,
-                  and Vite
+                  and Vite.
                 </li>
               </ul>
             </div>
@@ -581,12 +607,13 @@ export default function Home() {
               Programming Languages:
             </h3>
             <div className="flex flex-wrap gap-2">
-              <span className="chip">Java</span>
-              <span className="chip">TypeScript</span>
               <span className="chip">JavaScript</span>
+              <span className="chip">TypeScript</span>
               <span className="chip">Python</span>
+              <span className="chip">Java</span>
+              <span className="chip">SQL</span>
+              <span className="chip">NoSQL</span>
               <span className="chip">Shell</span>
-              <span className="chip">C++</span>
             </div>
           </div>
 
@@ -595,7 +622,8 @@ export default function Home() {
               Frontend Technologies:
             </h3>
             <div className="flex flex-wrap gap-2">
-              <span className="chip">React.js</span>
+              <span className="chip">React</span>
+              <span className="chip">React Native</span>
               <span className="chip">Next.js</span>
               <span className="chip">HTML</span>
               <span className="chip">CSS</span>
@@ -619,11 +647,12 @@ export default function Home() {
               Databases:
             </h3>
             <div className="flex flex-wrap gap-2">
+              <span className="chip">Firestore</span>
+              <span className="chip">DynamoDB</span>
               <span className="chip">PostgreSQL</span>
               <span className="chip">MySQL</span>
               <span className="chip">MongoDB</span>
-              <span className="chip">DynamoDB</span>
-              <span className="chip">Redis</span>
+              <span className="chip">Redis</span>              
             </div>
           </div>
 
@@ -634,6 +663,8 @@ export default function Home() {
             <div className="flex flex-wrap gap-2">
               <span className="chip">Docker</span>
               <span className="chip">AWS</span>
+              <span className="chip">Google Cloud</span>
+              <span className="chip">GitHub Actions</span>
             </div>
           </div>
 
@@ -643,10 +674,9 @@ export default function Home() {
             </h3>
             <div className="flex flex-wrap gap-2">
               <span className="chip">Git</span>
-              <span className="chip">GitHub</span>
+              <span className="chip">npm</span>
               <span className="chip">Yarn</span>
               <span className="chip">pnpm</span>
-              <span className="chip">npm</span>
             </div>
           </div>
         </div>
